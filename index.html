@@ -663,7 +663,7 @@
       <div class="stat-label">Automation Tools</div>
     </div>
     <div class="stat-card">
-      <div class="stat-number">2</div>
+      <div class="stat-number">3</div>
       <div class="stat-label">Live Projects</div>
     </div>
   </div>
@@ -829,6 +829,70 @@
         </div>
       </div>
     </div>
+
+    <article class="project-card">
+  <div class="project-badges">
+    <span class="badge badge-type">Low-Code · Automation</span>
+  </div>
+
+  <h3 class="project-title">Invoice Automation Pipeline</h3>
+
+  <p class="project-description">
+    Built to explore how AI and automation tools can eliminate manual invoice processing.
+    The pipeline watches Gmail for PDF attachments, uses Claude AI to extract structured
+    invoice data, routes low-confidence extractions for human review, and delivers a weekly
+    HTML summary email — all without human intervention.
+  </p>
+
+  <div class="project-tags">
+    <span class="tag">n8n</span>
+    <span class="tag">Make</span>
+    <span class="tag">Claude API</span>
+    <span class="tag">Google Sheets</span>
+    <span class="tag">Gmail</span>
+    <span class="tag">JavaScript</span>
+    <span class="tag">AI Extraction</span>
+    <span class="tag">Prompt Engineering</span>
+  </div>
+
+  <div class="project-workflow">
+    <div class="workflow-steps">
+      <div class="workflow-step">
+        <span class="step-number">01</span>
+        <span class="step-label">Gmail trigger detects invoice email with PDF attachment</span>
+      </div>
+      <div class="workflow-arrow">↓</div>
+      <div class="workflow-step">
+        <span class="step-number">02</span>
+        <span class="step-label">PDF converted to base64 via JavaScript code node</span>
+      </div>
+      <div class="workflow-arrow">↓</div>
+      <div class="workflow-step">
+        <span class="step-number">03</span>
+        <span class="step-label">Claude AI extracts vendor, invoice number, amounts, dates</span>
+      </div>
+      <div class="workflow-arrow">↓</div>
+      <div class="workflow-step">
+        <span class="step-number">04</span>
+        <span class="step-label">Confidence router — clean extractions vs needs review</span>
+      </div>
+      <div class="workflow-arrow">↓</div>
+      <div class="workflow-step">
+        <span class="step-number">05</span>
+        <span class="step-label">Google Sheets updated automatically by vendor</span>
+      </div>
+      <div class="workflow-arrow">↓</div>
+      <div class="workflow-step">
+        <span class="step-number">06</span>
+        <span class="step-label">Weekly HTML digest emailed to business owner</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="project-meta">
+    <span class="meta-item">🔧 Built with meta-prompting — Claude generated the extraction prompts deployed into n8n</span>
+  </div>
+</article>
 
     <!-- Zapier Workflow -->
     <div class="project-card reveal">
