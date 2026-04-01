@@ -830,100 +830,117 @@
       </div>
     </div>
     
- <!-- n8n Invoice Automation - Featured -->
-    <div class="project-card featured reveal">
-      <div>
-        <span class="project-type">Low-Code · Automation</span>
-        <h3>GradeFlow</h3>
-        <p>
-    Built to explore how AI and automation tools can eliminate manual invoice processing.
-    The pipeline watches Gmail for PDF attachments, uses Claude AI to extract structured
-    invoice data, routes low-confidence extractions for human review, and delivers a weekly
-    HTML summary email — all without human intervention.
-  </p>
+<!-- n8n Invoice Automation - Featured -->
+<div class="project-card featured reveal">
+  <div>
+    <span class="project-type">Low-Code · Automation</span>
+    <h3>Invoice Automation Pipeline</h3>
+    <p>
+      Built to explore how AI and automation tools can eliminate manual invoice processing.
+      The pipeline watches Gmail for PDF attachments, uses Claude AI to extract structured
+      invoice data, routes low-confidence extractions for human review, and delivers a weekly
+      HTML summary email — all without human intervention.
+    </p>
+    <div class="project-tags">
+      <span class="project-tag">n8n</span>
+      <span class="project-tag">Make</span>
+      <span class="project-tag">Claude API</span>
+      <span class="project-tag">Google Sheets</span>
+      <span class="project-tag">Gmail</span>
+      <span class="project-tag">JavaScript</span>
+      <span class="project-tag">AI Extraction</span>
+      <span class="project-tag">Prompt Engineering</span>
+    </div>
 
-  <div class="project-tags">
-    <span class="tag">n8n</span>
-    <span class="tag">Make</span>
-    <span class="tag">Claude API</span>
-    <span class="tag">Google Sheets</span>
-    <span class="tag">Gmail</span>
-    <span class="tag">JavaScript</span>
-    <span class="tag">AI Extraction</span>
-    <span class="tag">Prompt Engineering</span>
-  </div>
+    <div style="margin-top: 32px;">
+      <div style="font-size: 10px; text-transform: uppercase; letter-spacing: 0.12em; color: var(--accent); margin-bottom: 12px;">Demo Video</div>
+      <div style="position: relative; background: var(--surface); border: 1px solid var(--border); overflow: hidden;">
+        <div style="position: absolute; inset: 0; background: linear-gradient(135deg, rgba(0,229,160,0.03), transparent); pointer-events: none; z-index: 1;"></div>
+        <div style="position: relative; padding-bottom: 56.25%; height: 0;">
+          <iframe src="https://www.loom.com/embed/54aabe263a9e4958b9c710f22f6c78c0?hide_owner=true&hide_share=true&hide_title=false&hideEmbedTopBar=false" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" webkitallowfullscreen mozallowfullscreen allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe>
+        </div>
+      </div>
+    </div>
 
-  <div class="project-workflow">
-    <div class="workflow-steps">
-      <div class="workflow-step">
-        <span class="step-number">01</span>
-        <span class="step-label">Gmail trigger detects invoice email with PDF attachment</span>
-      </div>
-      <div class="workflow-arrow">↓</div>
-      <div class="workflow-step">
-        <span class="step-number">02</span>
-        <span class="step-label">PDF converted to base64 via JavaScript code node</span>
-      </div>
-      <div class="workflow-arrow">↓</div>
-      <div class="workflow-step">
-        <span class="step-number">03</span>
-        <span class="step-label">Claude AI extracts vendor, invoice number, amounts, dates</span>
-      </div>
-      <div class="workflow-arrow">↓</div>
-      <div class="workflow-step">
-        <span class="step-number">04</span>
-        <span class="step-label">Confidence router — clean extractions vs needs review</span>
-      </div>
-      <div class="workflow-arrow">↓</div>
-      <div class="workflow-step">
-        <span class="step-number">05</span>
-        <span class="step-label">Google Sheets updated automatically by vendor</span>
-      </div>
-      <div class="workflow-arrow">↓</div>
-      <div class="workflow-step">
-        <span class="step-number">06</span>
-        <span class="step-label">Weekly HTML digest emailed to business owner</span>
+    <div style="margin-top: 32px;">
+      <div style="font-size: 10px; text-transform: uppercase; letter-spacing: 0.12em; color: var(--accent); margin-bottom: 12px;">Workflow Screenshots</div>
+      <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 2px;">
+        <div style="background: var(--surface); border: 1px solid var(--border); overflow: hidden;">
+          <img src="assets/workflow-canvas.jpg" style="width:100%; display:block; aspect-ratio: 16/9; object-fit: cover;" alt="n8n Pipeline Canvas" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+          <div style="display:none; aspect-ratio:16/9; background: var(--surface2); align-items: center; justify-content: center; color: var(--muted); font-size: 12px;">Image loading...</div>
+          <div style="padding: 16px 20px; border-top: 1px solid var(--border);">
+            <div style="font-size: 11px; color: var(--accent);">01 &mdash; Canvas</div>
+            <div style="font-size: 12px; color: var(--muted); margin-top: 4px;">n8n pipeline all nodes green</div>
+          </div>
+        </div>
+        <div style="background: var(--surface); border: 1px solid var(--border); overflow: hidden;">
+          <img src="assets/claude-api-output.jpg" style="width:100%; display:block; aspect-ratio: 16/9; object-fit: cover;" alt="Claude API Extraction" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+          <div style="display:none; aspect-ratio:16/9; background: var(--surface2); align-items: center; justify-content: center; color: var(--muted); font-size: 12px;">Image loading...</div>
+          <div style="padding: 16px 20px; border-top: 1px solid var(--border);">
+            <div style="font-size: 11px; color: var(--accent);">02 &mdash; Extraction</div>
+            <div style="font-size: 12px; color: var(--muted); margin-top: 4px;">Claude AI extracting invoice JSON</div>
+          </div>
+        </div>
+        <div style="background: var(--surface); border: 1px solid var(--border); overflow: hidden;">
+          <img src="assets/google-sheets.jpg" style="width:100%; display:block; aspect-ratio: 16/9; object-fit: cover;" alt="Google Sheets" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+          <div style="display:none; aspect-ratio:16/9; background: var(--surface2); align-items: center; justify-content: center; color: var(--muted); font-size: 12px;">Image loading...</div>
+          <div style="padding: 16px 20px; border-top: 1px solid var(--border);">
+            <div style="font-size: 11px; color: var(--accent);">03 &mdash; Sheets</div>
+            <div style="font-size: 12px; color: var(--muted); margin-top: 4px;">Auto-populated vendor data</div>
+          </div>
+        </div>
+        <div style="background: var(--surface); border: 1px solid var(--border); overflow: hidden;">
+          <img src="assets/digest-email.jpg" style="width:100%; display:block; aspect-ratio: 16/9; object-fit: cover;" alt="Weekly Digest Email" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+          <div style="display:none; aspect-ratio:16/9; background: var(--surface2); align-items: center; justify-content: center; color: var(--muted); font-size: 12px;">Image loading...</div>
+          <div style="padding: 16px 20px; border-top: 1px solid var(--border);">
+            <div style="font-size: 11px; color: var(--accent);">04 &mdash; Digest</div>
+            <div style="font-size: 12px; color: var(--muted); margin-top: 4px;">Weekly summary email to owner</div>
+          </div>
+        </div>
+        <div style="background: var(--surface); border: 1px solid var(--border); overflow: hidden;">
+          <img src="assets/digest-workflow.jpg" style="width:100%; display:block; aspect-ratio: 16/9; object-fit: cover;" alt="Digest Workflow" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+          <div style="display:none; aspect-ratio:16/9; background: var(--surface2); align-items: center; justify-content: center; color: var(--muted); font-size: 12px;">Image loading...</div>
+          <div style="padding: 16px 20px; border-top: 1px solid var(--border);">
+            <div style="font-size: 11px; color: var(--accent);">05 &mdash; Digest Workflow</div>
+            <div style="font-size: 12px; color: var(--muted); margin-top: 4px;">Scheduled n8n digest pipeline</div>
+          </div>
+        </div>
       </div>
     </div>
   </div>
 
-  <div class="project-meta">
-    <span class="meta-item">🔧 Built with meta-prompting — Claude generated the extraction prompts deployed into n8n</span>
+  <div class="flow-diagram">
+    <div style="font-size: 10px; text-transform: uppercase; letter-spacing: 0.12em; color: var(--accent); margin-bottom: 16px;">Pipeline Workflow</div>
+    <div class="flow-step">
+      <span class="step-num">01</span>
+      Gmail trigger detects invoice email with PDF attachment
+    </div>
+    <div class="flow-arrow">↓</div>
+    <div class="flow-step">
+      <span class="step-num">02</span>
+      PDF converted to base64 via JavaScript code node
+    </div>
+    <div class="flow-arrow">↓</div>
+    <div class="flow-step">
+      <span class="step-num">03</span>
+      Claude AI extracts vendor, invoice number, amounts, dates
+    </div>
+    <div class="flow-arrow">↓</div>
+    <div class="flow-step">
+      <span class="step-num">04</span>
+      Confidence router — clean extractions vs needs review
+    </div>
+    <div class="flow-arrow">↓</div>
+    <div class="flow-step">
+      <span class="step-num">05</span>
+      Google Sheets updated automatically by vendor
+    </div>
+    <div class="flow-arrow">↓</div>
+    <div class="flow-step" style="border-left-color: var(--accent);">
+      <span class="step-num">✓</span>
+      Weekly HTML digest emailed to business owner
+    </div>
   </div>
-</article>
-
-    <!-- Demo Video -->
-<div class="media-item">
-  <div style="position: relative; padding-bottom: 56.25%; height: 0;">
-    <iframe
-      src="https://www.loom.com/embed/54aabe263a9e4958b9c710f22f6c78c0"
-      frameborder="0"
-      webkitallowfullscreen
-      mozallowfullscreen
-      allowfullscreen
-      style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;">
-    </iframe>
-  </div>
-</div>
-
-<!-- Screenshots -->
-<div class="screenshot-row">
-  <figure class="screenshot-fig">
-    <img src="assets/workflow-canvas.jpg" alt="n8n Pipeline Canvas"/>
-    <figcaption>01 — Pipeline Canvas</figcaption>
-  </figure>
-  <figure class="screenshot-fig">
-    <img src="assets/claude-api-output.jpg" alt="Claude API Output"/>
-    <figcaption>02 — Claude Extraction</figcaption>
-  </figure>
-  <figure class="screenshot-fig">
-    <img src="assets/google-sheets.jpg" alt="Google Sheets"/>
-    <figcaption>03 — Google Sheets</figcaption>
-  </figure>
-  <figure class="screenshot-fig">
-    <img src="assets/digest-email.jpg" alt="Digest Email"/>
-    <figcaption>04 — Digest Email</figcaption>
-  </figure>
 </div>
 
     <!-- Zapier Workflow -->
