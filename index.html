@@ -982,7 +982,7 @@
 </div>
 
     <!-- Zapier Workflow -->
-    <div class="project-card reveal">
+    <div class="project-card reveal" style="grid-column: 1 / -1;">
       <span class="project-type blue">No-Code · Automation</span>
       <h3>Team Issue Tracker</h3>
       <p>
@@ -1036,10 +1036,33 @@
           </div>
         </div>
       </div>
+
+      <div class="flow-diagram" style="margin-top: 32px;">
+        <div style="font-size: 10px; text-transform: uppercase; letter-spacing: 0.12em; color: var(--accent2); margin-bottom: 16px;">Automation Workflow</div>
+        <div class="flow-step">
+          <span class="step-num">01</span>
+          Team member submits issue via Google Form
+        </div>
+        <div class="flow-arrow">↓</div>
+        <div class="flow-step">
+          <span class="step-num">02</span>
+          Zapier trigger fires — issue logged to Google Sheets automatically
+        </div>
+        <div class="flow-arrow">↓</div>
+        <div class="flow-step">
+          <span class="step-num">03</span>
+          Confirmation email sent to the reporter
+        </div>
+        <div class="flow-arrow">↓</div>
+        <div class="flow-step" style="border-left-color: var(--accent2);">
+          <span class="step-num">✓</span>
+          Slack alert fired to the responsible stakeholder for immediate action
+        </div>
+      </div>
     </div>
 
     <!-- AI News Across Africa -->
-    <div class="project-card reveal">
+    <div class="project-card reveal" style="grid-column: 1 / -1;">
       <span class="project-type">Python · AI Agent</span>
       <h3>AI News Across Africa</h3>
       <p>
